@@ -16,6 +16,11 @@ def valid_move? (board, index)
    return !position_taken?(board, index) && index.between?(0,8)
 end
 
-def move 
-  
+def input_to_index (input)
+  index = input.to_i - 1
+  return index
+end
+
+def move (board, index, character = "X")
+  board[index] = character
 end
