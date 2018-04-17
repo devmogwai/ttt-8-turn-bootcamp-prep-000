@@ -32,5 +32,5 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets
-  puts input
+  puts input - 3 
 end
